@@ -1,13 +1,261 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 900px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
+  background: #1b1d35;
+  color: #fff;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-graficos {
+  width: 90%;
+  margin: auto;
+}
+
+.container-registrate {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 700px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.titulo h1 {
+  font-size: 4rem;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  font-size: 2rem;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 450px;
+}
+
+.container-user {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-editar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 300px;
+  margin: auto;
+}
+
+.parrafo-editar-usuario {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.form-group {
+  padding: 10px;
+}
+
+.form-group input {
+  width: 300px;
+  padding: 10px;
+}
+
+.submit {
+  padding: 15px;
+  font-size: 1.3rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: #1b1d35;
+  cursor: pointer;
+  transition: 1s;
+  color: #fff;
+}
+
+.enlace {
+  font-size: 1.2rem;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.table {
+  height: 10px;
+  width: 300px;
+}
+
+.filas {
+  text-align: center;
+  font-size: 0.5rem;
+  border: 1px solidrgb(0, 128, 0);
+}
+.filas th {
+  text-transform: uppercase;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.filas td {
+  text-transform: uppercase;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.filas:hover {
+  border: 2px rgb(218, 165, 32);
+}
+
+.btn-disabled {
+  margin: 4px;
+  color: red;
+  cursor: pointer;
+  pointer-events: none;
+  text-decoration: line-through;
+}
+
+.btn-user {
+  margin: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-user:hover {
+  background: orchid;
+}
+.cerrar-sision {
+  margin-left: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.container-edit {
+  cursor: pointer;
+}
+.axios-mensaje-error {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mensaje-error {
+  color: red;
+  text-transform: uppercase;
+  font-size: 1rem;
+  height: 20px;
+  text-align: center;
+}
+
+.container-graficos h1 {
+  margin-left: 10px;
+  margin-top: 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.container-enlaces-graficos {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+.container-enlaces-graficos a {
+  text-transform: uppercase;
+  font-family: "ROBOTO", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  .filas {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .table {
+    height: 30px;
+    width: 600px;
+  }
+  .filas {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .table {
+    width: 800px;
+  }
+  .filas {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .table {
+    width: 90%;
+  }
+  .filas {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .table {
+    width: 95%;
+  }
+  .filas {
+    font-size: 1.6rem;
+  }
+  .cerrar-sision {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    width: 90%;
+  }
+  .parrafo-editar-usuario {
+    font-size: 1.3rem;
+  }
+  .container-graficos h1 {
+    font-size: 1.4rem;
+  }
+
+  .titulo {
+    height: 100px;
+  }
+  .container-enlaces-graficos {
+    justify-content: space-around;
+    width: 90%;
+  }
+  .container-enlaces-graficos a {
+    font-size: 1.4rem;
+  }
 }

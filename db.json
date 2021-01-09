@@ -1,0 +1,12 @@
+{
+  "user": [
+    {
+      "nombre": "usuario1",
+      "email": "corre@corre.com",
+      "profesión": "medico",
+      "password": "usuarioprueba",
+      "edad": "20",
+      "id": "55113012-fe7a-44cf-a2ac-ea8ce2a25793"
+    }
+  ]
+}
