@@ -23,4 +23,4 @@ Ejecutar Json server en los siguientes puertos
 
 json-server db.json --port 4000
 
-json-server db.json --port 5000
+json-server estadistica --port 5000
